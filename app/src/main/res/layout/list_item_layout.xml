@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Removed this as redundant code RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"-->
+
+    <!--LinearLayout
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:orientation="vertical"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
+
+    </LinearLayout-->
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <!-- Removed this as redundant code. We cannot position something inside a RelativeLayout with something
+    outside a RelativeLayout.
+        android:layout_toRightOf="@+id/image" -->
+
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title" />
+
+        <!-- I moved image inside the relative layout to be along with title and desc-->
+        <!-- I set width and height of every image so all of them to have the same size-->
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_below="@+id/desc"/>
+
+    </RelativeLayout>

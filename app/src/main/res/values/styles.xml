@@ -1,0 +1,11 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <!-- Changed this, i added Base.Theme.AppCompat>light>DarkActionBar -->
+    <!-- because on the layout of fragment_main.xml the class android.support.v7.widget.AppCompatTextView
+    was failing to instantiate-->
+    <style name="AppTheme" parent="Base.Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+    </style>
+
+</resources>
